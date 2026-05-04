@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+     <!--head: contains metadate, page title, font link  and external css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title> Alan Partridge Advanced Soundboard</title>
+        <link rel="stylesheet" href="05-Bonus.css">
+    </head>
+    <body>
+        <!--two main column wrapper-->
+        <div class="grid">
+            <!--sidebar text to speech-->
+            <aside>
+                <h1>🐟 PSYCHEDELIC FISH</h1>
+                    <textarea id="text" placeholder="Type here..."></textarea>
+                    <button id="say">Say it</button>
+            </aside>
+            <!--sound grid-->
+            <main>
+                <h2 id="Title">Sample Bank 1</h2>
+                <div class="playlist" id="playlist"></div>
+            </main>
+            <!--prev and next buttons-->
+            <footer>
+                <button id="prev">&#8592;</button>
+                <button id="next">&#8594;</button>
+            </footer>
+        </div>
+        <!--javascript file  for it to be ready before it runs-->
+        <script src="05-Bonus.js"></script>
+    </body>
+</html>
+
