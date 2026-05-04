@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadate, page title, and internal css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>Cast</title>
+        <style>
+            /*set overall theme, font, text color, and spacing */
+            body{
+                    background-color: #0f1c2e;
+                    color: white;
+                    font-family: 'Lora', Georgia;
+                    font-size: 16px;
+                    line-height: 1.8;
+                    text-align: center;
+                }
+            
+            /*styles title*/
+            h1{
+                font-family: 'Cinzel';
+                font-size: 34px;
+                color:#c9a84c;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+
+            }
+
+            /*adds spacing and bottom border for navigation area*/
+            div {
+                margin-top: 1rem;
+                margin-bottom: 6rem;
+                border-bottom:1px solid #c9a84c;
+                border-top: 1px solid #c9a84c;;
+            }
+
+            /*creates horizontal navigation */
+            ul{
+                list-style-type: none;
+                gap: 0;
+                display: flex;
+                justify-content: center;
+                margin:  1rem;
+            }
+
+            /*styles navigation link with spaces and color */
+            ul li a {
+                font-size: 16px;
+                display:block;
+                color: #c9a84c;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /*adds hover effect*/
+            ul li a:hover{
+                background-color: #ffffff08;
+                border: 1px solid #c9a84c;
+            }
+            
+            /*Styles text with color, size, font style, and spacing*/
+            h2{
+                font-family: "Cinzel";
+                font-size: 40px;
+                color:#c9a84c
+            }
+
+            p{
+                margin-bottom: 4rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--display main title-->
+        <h1> THE CHRONICLES OF NARNIA</h1>
+        <div>
+            <!--provides link to other pages od the website-->
+           <nav>
+                <ul>
+                    <li><a href="02-Bonus.html">Home</a></li>
+                    <li><a href="02-Overview.html">Overview</a></li>
+                    <li><a href="02-KeyInfo.html">Key Information</a></li>
+                    <li><a href="02-Cast.html">Cast</a></li>
+                    <li><a href="02-Characters.html">Characters</a></li>
+                    <li><a href="02-Review.html">Reviews</a></li>
+                </ul>
+           </nav>
+        </div>
+        <section>
+            <!--Displays the main cast list with actors and their roles
+            uses <h2> for section title and <p> with  <br> for line
+            break in the cast list-->
+            <h2>Cast</h2>
+            <p>William Moseley as Peter Pevensie <br>
+               Anna Popplewell as Susan Pevensie <br>
+               Skandar Keynes as Edmund Pevensie <br> 
+               Georgie Henley as Lucy Pevensie Liam <br>
+               Neeson as Aslan <br>
+               Tilda Swinton as The White Witch
+            </p>
+        </section>
+    </body>
+</html>

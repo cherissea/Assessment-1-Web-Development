@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadate, page title, and internal css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>Characters</title>
+        <style>
+             /*set overall theme, font, text color, and spacing */
+            body{
+                    background-color: #0f1c2e;
+                    color: white;
+                    font-family: 'Lora', Georgia;
+                    font-size: 16px;
+                    line-height: 1.8;
+                    text-align: center;
+                }
+
+            /*styles title*/
+            h1{
+                font-family: 'Cinzel';
+                font-size: 34px;
+                color:#c9a84c;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+
+            }
+
+            /*adds spacing and bottom border for navigation area*/
+            div {
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                border-bottom:1px solid #c9a84c;
+                border-top: 1px solid #c9a84c;;
+            }
+
+            /*creates horizontal navigation */
+            ul{
+                list-style-type: none;
+                gap: 0;
+                display: flex;
+                justify-content: center;
+                margin:  1rem;
+            }
+
+            /*styles navigation link with spaces and color */
+            ul li a {
+                font-size: 16px;
+                display:block;
+                color: #c9a84c;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /*adds hover effect*/
+            ul li a:hover{
+                background-color: #ffffff08;
+                border: 1px solid #c9a84c;
+            }
+
+            /*Styles section title with color, font style, and size*/
+            h2{
+                font-family: "Cinzel";
+                font-size: 40px;
+                color:#c9a84c
+            }
+
+            /*centered grid container for character cards with padding and gap*/
+            .Charac{
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 1.5rem 2rem 3.5rem;
+                display: grid;
+                gap: 25px;
+            }
+
+            /*Styling card with translucent white background and right side gold border*/
+            .section{
+                background: #ffffff08;
+                border: 1px solid #c9a84c4d;
+                border-radius: 4px;
+                padding: 10px
+            }
+
+            /*Character names styled gold with gold bottom border*/
+            .section h3{
+                font-family: "Cinzel";
+                letter-spacing: 5px;
+                color:#c9a84c;
+                border-bottom: 1px solid #c9a84c;
+            }
+        </style>
+    </head>
+    <body>
+        <!--display main title-->
+        <h1> THE CHRONICLES OF NARNIA</h1>
+        <div>
+        <!--provides link to other pages od the website-->
+           <nav>
+                <ul>
+                    <li><a href="02-Bonus.html">Home</a></li>
+                    <li><a href="02-Overview.html">Overview</a></li>
+                    <li><a href="02-KeyInfo.html">Key Information</a></li>
+                    <li><a href="02-Cast.html">Cast</a></li>
+                    <li><a href="02-Characters.html">Characters</a></li>
+                    <li><a href="02-Review.html">Reviews</a></li>
+                </ul>
+           </nav>
+        </div>
+        <section id="Characters" class = "Charac">
+        <!--Displays each characters seperately and uses ids with class for distinguish styling in css-->
+            <h2>Characters</h2>
+            <div class="section">
+                <h3>Peter Pevensie</h3>
+                <p>The eldest sibling and The High King who led the battle representing responsibility and courage </p>
+            </div>
+            <div class="section">
+                <h3>Susan Pevensie</h3>
+                <p>The Gentle Queen. She became the legendary archer known for her grace and caution. Armed with her magical bow and a horn that summons help in times of need, she serves as a protective guardian of her family </p>
+            </div>
+            <div class="section">
+                <h3>Edmund Pevensie</h3>
+                <p>The Redeemed. Initially lured by the White Witch's promises, he learns the true cost of greed. After being saved by Aslan, he becomes a loyal and wise king, representing forgiveness and justice</p>
+            </div>
+            <div class="section">
+                <h3>Lucy Pevensie</h3>
+                <p>The youngest sibling She is the first sibling to discover the portal to narnia, her faith and pure heart allows her to see the magic of narnia before anyone else.</p>
+            </div>
+            <div class="section">
+                <h3>Aslan</h3>
+                <p>The Great Lion and True King of Narnia. A powerful, wise, and compassionate authority, who serves as a mentor to the children and makes pivotal sacrifice to save Narnia</p>
+            </div>
+            <div class="section">
+                <h3>Jadis</h3>
+                <p>The white witch. A cold and poweful sorceress who has usurped the throne of Narnia. She cursed the land to a century of winter.</p>
+            </div>
+        </section>
+    </body>
+</html>

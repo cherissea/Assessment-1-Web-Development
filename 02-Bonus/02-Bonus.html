@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadate, page title, and internal css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>The Chronicles of Narnia</title>
+        <style>
+            /*set overall theme, font, text color, and spacing */
+            body{
+                    background-color: #0f1c2e;
+                    color: white;
+                    font-family: 'Lora', Georgia;
+                    font-size: 16px;
+                    line-height: 1.8;
+                }
+
+            /*styles main title area with centered text and decorative borders*/
+            section{
+                font-family: 'Cinzel';
+                font-size: 34px;
+                text-align: center;
+                color:#c9a84c;
+                border-bottom:1px solid ;
+                margin-top: 10rem;
+                border-top: 1px solid #c9a84c;
+            }
+            
+            /*italicized sub heading*/
+            h3{
+                font-style:italic;
+                font-size: 20px;
+            }
+
+            /*centers button and style it with spacing and background color */
+            button{
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin:0 auto;
+                background: #c9a84c;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+            
+            /*Styles the button text link*/
+            button a{
+                color: #0f1c2e;
+                font-family: "Cinzel";
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            /*adds spacing and bottom border for navigation area*/
+            div {
+                margin-top: 1rem;
+                border-bottom:1px solid #c9a84c;
+                margin-bottom: 10rem;
+            }
+
+            /*creates horizontal navigation */
+            ul{
+                list-style-type: none;
+                gap: 0;
+                display: flex;
+                justify-content: center;
+                margin:  1rem;
+            }
+
+            /*styles navigation link with spaces and color */
+            ul li a {
+                display:block;
+                color: #c9a84c;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /*adds hover effect*/
+            ul li a:hover{
+                background-color: #ffffff08;
+                border: 1px solid #c9a84c;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!--display main title, subtitle, and watch link-->
+        <section>
+            <h1>THE CHRONICLES OF NARNIA</h1>
+            <h3>The Lion, The Witch, and The Wardrobe</h3>
+            <button><a href="https://www.cineby.sc/movie/411?play=true">Watch: The Chronicles of Narnia</a></button>
+        </section>
+        <div>
+            <!--provides link to other pages od the website-->
+           <nav>
+                <ul>
+                    <li><a href="02-Overview.html">Overview</a></li>
+                    <li><a href="02-KeyInfo.html">Key Information</a></li>
+                    <li><a href="02-Cast.html">Cast</a></li>
+                    <li><a href="02-Characters.html">Characters</a></li>
+                    <li><a href="02-Review.html">Reviews</a></li>
+                </ul>
+           </nav>
+        </div>
+    </body>
+</html>
