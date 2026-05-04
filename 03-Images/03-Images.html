@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadate, page title, and external css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>Three Images</title>
+        <style>
+            /*set overall theme, font, text color, and spacing */
+            body{
+                font-family: Arial,sans-serif;
+                margin: 20px;
+                background-color: black;
+                color:yellow;
+                text-align: center;
+            }
+
+            /*centers image horizontally */
+            div{
+                display: flex;
+                justify-content: center;
+            }
+
+            /*CSS filters with blur, brightness, and contrast*/
+            .filter{
+                filter: blur(1px);
+                filter: brightness(150%);
+                filter: contrast(120%);
+            }
+        </style>
+    </head>
+    <body>
+        <!--Displays Text header-->
+        <h1> Mcdonald's Jujutsu Kaisen Special Sauce  </h1>
+        <div>
+        <!--Images with alt text, copyright, and title. Also class that will used for css style-->
+        <figure>
+            <img 
+                class="filter"
+                src="sukuna.avif" 
+                alt="Jujutsu Kaisen collab with Mcdonalds Featuring a Sauce with Ryomen Sukuna" 
+                width="200" 
+                height="300"
+                title="JJK Ryomen Sukuna Sauce"
+            >
+            <p>Mcdonald's All Rights Reserved</p>
+        </figure>
+        <figure>
+            <img 
+                class="filter"
+                src="nanami.avif" 
+                alt="Jujutsu Kaisen collab with Mcdonalds Featuring a Sauce with Kento Nanami"
+                width="200" 
+                height="300"
+                title="JJK Kento Nanami Sauce"
+            >
+            <p>Mcdonald's All Rights Reserved</p>
+        </figure>
+        <figure>
+            <img 
+                class="filter"
+                src="gojo.avif" 
+                alt="ujutsu Kaisen collab with Mcdonalds Featuring a Sauce with Satoro Gojo" 
+                width="200" 
+                height="300"
+                title="JJK Satoro Gojo Sauce"
+            >
+            <p>Mcdonald's All Rights Reserved</p>
+        </figure>
+        </div>
+    </body>
+</html>
