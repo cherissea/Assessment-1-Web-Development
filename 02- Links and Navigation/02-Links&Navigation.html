@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadate, page title, font link  and external css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>Links and Navigation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="02-Style.css">
+    </head>
+    <body>
+        <header>
+            <section>
+                <!--provides link to other pages od the website-->
+                <nav>
+                    <ul>
+                        <li><a href="#Overview">Overview</a></li>
+                        <li><a href="#KeyInfo">Key Information</a></li>
+                        <li><a href="#Cast">Cast</a></li>
+                        <li><a href="#Characters">Characters</a></li>
+                        <li><a href="#Reviews">Reviews</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <!--display main title-->
+                <h1>THE CHRONICLES OF NARNIA</h1>
+            </section>
+        </header>
+        <!--Displays the plot of the movie. Uses <h2> for section 
+        title and <p> for the description-->
+        <section id="Overview">
+            <h2>Overview</h2>
+            <p>The Movie follows four Pevensie siblings, Peter, Susan, Edmund, and Lucy, Who escaped WWII London to a
+            country home. They discover a wardrobe acting as a portal to Narnia, a magical land frozen in eternal winter by
+            the White Witch, Jadis. The children soon learn they are part of an ancient prophecy to liberate the kingdom
+            alongside the Great Lion, Aslan. However, after a stinging betrayal puts the group in danger, the siblings must
+            find their courage to lead a massive war for Narnia's survival.It is a visually stunning epic that explores whether
+            four ordinary children can become the legends a dying world needs.</p>
+        </section>
+        <!--Displays key information uses <h2> for section 
+        title and <p> with  <br> for line break in each information-->
+        <section id="KeyInfo">
+            <h2>Key Information</h2>
+            <p>Duration: 2 hours and 23 minutes<br>
+            Genre: Fantasy, Adventure, Family<br>
+            Release Date: December 8, 2005<br>
+            Director: Andrew Adamson<br>
+            Studios: Walt Disney Pictures & Walden Media</p>
+        </section>
+        <!--Displays the main cast list with actors and their roles
+        uses <h2> for section title and <p> with  <br> for line
+        break in the cast list-->
+        <section id="Cast">
+            <h2>Cast</h2>
+            <p>William Moseley as Peter Pevensie <br>
+               Anna Popplewell as Susan Pevensie <br>
+               Skandar Keynes as Edmund Pevensie <br> 
+               Georgie Henley as Lucy Pevensie Liam <br>
+               Neeson as Aslan <br>
+               Tilda Swinton as The White Witch
+            </p>
+        </section>
+        <!--Displays each characters seperately and uses ids with class for distinguish styling in css-->
+        <section id="Characters" class = "Charac">
+            <h2>Characters</h2>
+            <div class="section">
+                <h3>Peter Pevensie</h3>
+                <p>The eldest sibling and The High King who led the battle representing responsibility and courage </p>
+            </div>
+            <div class="section">
+                <h3>Susan Pevensie</h3>
+                <p>The Gentle Queen. She became the legendary archer known for her grace and caution. Armed with her magical bow and a horn that summons help in times of need, she serves as a protective guardian of her family </p>
+            </div>
+            <div class="section">
+                <h3>Edmund Pevensie</h3>
+                <p>The Redeemed. Initially lured by the White Witch's promises, he learns the true cost of greed. After being saved by Aslan, he becomes a loyal and wise king, representing forgiveness and justice</p>
+            </div>
+            <div class="section">
+                <h3>Lucy Pevensie</h3>
+                <p>The youngest sibling She is the first sibling to discover the portal to narnia, her faith and pure heart allows her to see the magic of narnia before anyone else.</p>
+            </div>
+            <div class="section">
+                <h3>Aslan</h3>
+                <p>The Great Lion and True King of Narnia. A powerful, wise, and compassionate authority, who serves as a mentor to the children and makes pivotal sacrifice to save Narnia</p>
+            </div>
+            <div class="section">
+                <h3>Jadis</h3>
+                <p>The white witch. A cold and poweful sorceress who has usurped the throne of Narnia. She cursed the land to a century of winter.</p>
+            </div>
+        </section>
+        <!--Displays the reviews. Uses <h2> for section 
+        title and <p> for each review-->
+        <section id="Reviews">
+            <h2>Reviews</h2>
+            <p>ROTTEN TOMATO: 5/5 stars by @JerseyCityDean Just watched this movie again for the second time. First time was like 2010. What a fantastic movie and if you are a Christian you can see the pictures of Jesus in it. It was well made and the children’s acting was very believable. Especially the youngest girl she did such a great job and was so mature. The action at the end of the film was also great as I enjoy action movies and it had that in it as well. Highly recommended!!!</p>
+            <p>IMDB: 10/10 stars by @arabianardour A classic for All TIme This movie should go down in the history books right up there with the likes of Lord of RIngs</p>
+        </section>
+        <section>
+            <!--connects to a watching site when clicked-->
+            <button><a href="https://www.cineby.sc/movie/411?play=true">Watch: The Chronicles of Narnia</a></button>
+        </section>
+    </body>
+</html>
