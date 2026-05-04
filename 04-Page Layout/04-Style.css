@@ -1,0 +1,129 @@
+/*resets universal margin/padding and boder box sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*sets the header purple theme, font, and alignment */
+header{
+    font-family: Tahoma,;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 20px 30px ;
+    background-color: #17072b;
+}
+
+/*Heading underline and text color*/
+h1{
+    color:white;
+    margin: 0px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+/*navigation text color*/
+nav{
+    color:white
+}
+
+/*centered horizontal navigation */
+ul{
+    list-style-type: none;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/*adjust padding and removes underline on navigation text*/
+ul li a {
+    display:block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*sets text style for all*/
+body{
+    font-family: Arial;
+    font-weight:400;
+    margin: 0px;
+    }
+
+/*side by side main and aside layout*/
+body div{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/*main content area with bigger proportion than aside*/
+main{
+    flex: 2;
+    padding: 40px
+}
+
+/*responsive full width with auto height*/
+main image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*styles sidebar color, width and column flex*/
+aside{
+    flex: 1;
+    background-color:#172d67;
+    color:white;
+    display: flex;
+    padding: 40px 30px;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+/*heading bottom spacing*/
+aside h2{
+    margin-bottom: 40px;
+}
+
+/*vertical list of navigation*/
+aside ul{
+    display: block;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/*font size and spacing*/
+aside li{
+    font-size: 1.1 rem;
+    margin-bottom: 20px;
+}
+
+/*image are positioned at the end of the side bar*/
+aside div{
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    width:100%
+}
+
+/*image square aspect ratio*/
+aside div img{
+    width: calc(50% - 7.5px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/*footer with purple background*/
+footer{
+    background-color:#8c15e9;
+    color:white;
+    text-align: center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
