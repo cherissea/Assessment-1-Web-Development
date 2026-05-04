@@ -1,0 +1,193 @@
+/*set overall theme, font, text color, and spacing */
+body{
+    font-family:'Quicksand', sans-serif;
+    background-color:white;
+    color: black;
+    line-height: 1.6;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header theme color, font, and spacing*/
+header{
+    background-color:#645394;
+    font-family:'Yeseva One';
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+}
+
+/*Focura Sizing and letter spacing*/
+header h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/*Tagline sizing and margin*/
+header p{
+    font-size: 0.82rem;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/*navigation pink background and margin from container*/
+nav{
+    background-color: #dab1da;
+    padding: 2px 40px;
+}
+
+/*makes list lay horizontally and no bullet points*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+/*styling hover transitions*/
+nav ul li a {
+    display: flex;
+    color:#645394;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+/*adds hover effect to navigations*/
+nav ul li a:hover{
+    background-color: #645394;
+    color: white;
+    font-weight: 600;
+}
+
+/*current page tab styling*/
+nav ul li a.active{
+    background-color: #645394;
+    color: white;
+    font-weight: 600;
+}
+
+/*spacing with main content*/
+main{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 30px 20px 40px;
+}
+
+/*Styled heading*/
+.greet h2{
+    font-family: 'Yeseva One';
+    color: #645394;
+    margin-bottom: 6px;
+}
+
+/*text after heading*/
+.greet p{
+    font-size: 15px;
+}
+
+/*three column grid layout*/
+.aside{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/*panel card styled with background color, shadow, and rounded corners*/
+.panel{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+    overflow: hidden;
+}
+
+/*style bg color of paneh header*/
+.panel header{
+    background-color: #645394;
+    padding: 14px 18px;
+}
+
+/*pink border on panel content*/
+.panel div{
+    border: 1px solid #dab1da;
+    border-radius: 8px;
+    padding: 16px 18px ;
+    font-size: 0.9rem;
+}
+
+/*Text labels displayed as block*/
+.panel div strong{
+    display: block;
+    color: #645394;
+    margin-bottom: 2px;
+}
+
+/*size adjusment*/
+.panel div span{
+    font-size: 12px;
+}
+
+/* task panel with green left accent border*/
+#task{
+    border-left: 4px solid lightgreen;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+}
+
+#task h3{
+    font-size: larger;
+    margin-bottom: 4px;
+}
+
+/*status badge styled in line block and rounded corner*/
+.status{
+    display: inline-block;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin: 6px
+}
+
+/*different color for eac status*/
+.status.done{background: lightgreen;}
+.status.ongoing{ background-color: yellow;}
+.status.todo{background-color: lightsalmon;}
+
+/*styles the add task button*/
+button{ 
+    display: inline-block;
+    background-color: #645394;
+    padding: 8px 18px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+/*last section styling text large*/
+.last p{
+    font: size 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10PX 0 4px;
+}
+
+/*progress value bold*/
+.value{
+    font-weight: 700;
+}
+
+/*purple footer with centered text*/
+footer{
+    background-color: #645394;
+    color: white;
+    text-align: center;
+    padding:  20px 40px;
+    font-size: larger;
+}

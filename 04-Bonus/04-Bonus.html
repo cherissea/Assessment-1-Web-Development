@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <!--head: contains metadata, title, font link and external css link-->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <title>Study Planner</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Quicksand:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="04-Bonus.css">
+    </head>
+    <body>
+        <!--Header with name and tagline -->
+        <header>
+            <h1>Focura</h1>
+            <p>where focus meets results </p>
+        </header>
+        <!--navigation with active tab for current page-->
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a class="active">Dashboard</a></li>
+                <li><a>Notes</a></li>
+                <li><a>Resources</a></li>
+                <li><a>Profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!--Personalized greeting-->
+            <section class="greet">
+                <h2> Welcome Back Cheriss!</h2>
+                <p>Time to learn Creative Computing Course in a easy and smart way. Goodluck! </p>
+            </section>
+            <!--Three column layout Course Topic, Task, and Progress-->
+            <div class="aside">
+                <!--Left column course topic panel with syllabus and duration -->
+                <aside>
+                    <div class="panel">
+                        <header>
+                        <h2>Course Topics</h2>
+                        </header>
+                        <div>
+                            <strong>Learn HTML: Fundamentals </strong>
+                            <span>Week 1  6 Hours</span>
+                        </div>
+                        <div>
+                            <strong>Learn CSS: Fundamentals </strong>
+                            <span>Week 2-3  8 Hours</span>
+                        </div>
+                        <div>
+                            <strong>Learn Javascript: Fundamentals </strong>
+                            <span>Week 4-6  5 Hours</span>
+                        </div>
+                        <div>
+                            <a href="#">View Full Syllabus</a>
+                        </div>
+                    </div>
+                </aside>
+                <section>
+                    <!--middle column showcasing tasks and status-->
+                    <div class="panel"> 
+                        <header>
+                            <h2>Study Schedule</h2>
+                        </header>
+                        <div id="task">
+                            <h3>HTML Fundamentals</h3>
+                            <p>TUESDAY, APRIL 14 | 2 hours | Practice Exercises </p>
+                            <span class="status done"> COMPLETED</span>
+                        </div>
+                        <div id="task">
+                            <h3>CSS Fundamentals</h3>
+                            <p>MONDAY, APRIL 20 | 3 hours | Video + Practice Exercises </p>
+                            <span class="status done"> COMPLETED</span>
+                        </div>
+                        <div id="task">
+                            <h3>JavaScript Fundamentals</h3>
+                            <p> SATURDAY, APRIL 25 | 4 hours | Lecture + Video </p>
+                            <span class="status ongoing"> IN PROGRESS...</span>
+                        </div>
+                        <div id="task">
+                            <h3>Challenge Test</h3>
+                            <p> THURSDAY, APRIL 30 | 2 hours | Quiz + Flashcards </p>
+                            <span class="status todo"> TO DO</span>
+                        </div>
+                        <div id="task">
+                            <h3>Make Your Own</h3>
+                            <p>SUNDAY, May 3 | 6 hours | Lab Practical </p>
+                            <span class="status todo">TO DO</span>
+                        </div>
+                        <button>ADD TASK</button>
+                    </div>
+                </section>
+                <aside class="last">
+                    <!--Right column: Progress panel with completion stats and deadline -->
+                    <div class="panel">
+                        <header>
+                            <h2>My Progress</h2>
+                        </header>
+                        <p>30%</p>
+                        <p>TASK COMPLETED</p>
+                        <div class="progress">
+                            <span>Task Done</span>
+                            <span class="value"> 2/5</span>
+                        </div>
+                        <div class="progress">
+                            <span>Hours Studied</span>
+                            <span class="value">5 Hours</span>
+                        </div>
+                        <div class="progress">
+                            <span>Deadline</span>
+                            <span class="value">THURSDAY, MAY 7</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <!--footer with course attribution-->
+        <footer>
+            <p>Focura Creative Computing Web Development Course 2026</p>
+        </footer>
+    </body>
+</html>
