@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RGB Color Guessing Game</title>
+        <link rel="stylesheet" href="06-Bonus.css">
+    </head>
+    <body>
+        <h1>RGB COLOR GUESS</h1>
+        <div class="game">
+            <!-- score and lives-->
+             <div> Score: <span id="score">0</span> | Lives: <span id="lives">3</span></div>
+            
+             <!--RGB to guess-->
+             <div id="rgb" class="rgb"></div>
+
+             <!--3 color buttons-->
+             <div class="colors">
+                <button class="colorbut" id="but1"></button>
+                <button class="colorbut" id="but2"></button>
+                <button class="colorbut" id="but3"></button>
+             </div>
+
+             <!--Game Over-->
+             <div id="over" class="Over">
+                <h2>GAME OVER!</h2>
+                <p> Final Score: <span id="fscore">0</span></p>
+                <button onclick="resetGame()">PLAY AGAIN</button>
+             </div>
+         </div>
+         <script src="06-Bonus.js"></script>
+    </body>
+</html>

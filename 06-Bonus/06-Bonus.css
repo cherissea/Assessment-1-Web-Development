@@ -1,0 +1,93 @@
+/*sets dark theme and centers content*/
+body{
+    background-color: #333;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+/*right margin*/
+h1{
+    margin-right: 15rem;
+}
+
+/*main game container with shadow*/
+.game {
+    text-align: center;
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px;
+}
+
+/*game text styling*/
+.game div{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/*rgb display box*/
+.rgb{
+    font-size: 3em;
+    font-family: monospace;
+    margin: 30px 0;
+    padding: 20px;
+    background: #444;
+    border-radius: 10px;
+}
+
+/*color button container*/
+.colors{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*color buttons*/
+.colorbut{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*hover effect on color button*/
+.colorbut:hover{
+    transform: scale(1.1);
+}
+
+/*correct answer glows green*/
+.colorbut.correct{
+    box-shadow: 0 0 20px #0f0;
+    transform: scale(1.2);
+}
+
+/*wrong answer glow red*/
+.colorbut.wrong{
+    box-shadow: 0 0 20px #f00;
+}
+
+/*game over screen (hidden by default)*/
+.Over {
+    display: none;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+/*restart button*/
+.Over button {
+    padding: 10px 20px;
+    background:#0a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
