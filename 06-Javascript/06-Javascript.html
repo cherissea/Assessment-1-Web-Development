@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width=device-width", initial-scale=1.0">
+        <Title>Petrol Calculator</Title>
+        <link rel="stylesheet" href="06-Style.css">
+    </head>
+    <body>
+        <div class="Calcu">
+            <h1>Petrol Calculator ⛽</h1>
+            <!--Price input with default 2.18sr per 95 octane-->
+            <input types="number" id="price" value="1.27" step="0.1" placeholder="Price per Liter">
+            <label> SR / Liter</label>
+
+            <!--Liters with default 0-->
+            <input types="number" id="liters" value="0" step="0.1" placeholder="Liter">
+            <label>Liters</label>
+
+            <!--Calculate button-->
+            <button onclick="calculate()">Calculate</button>
+
+            <!--Display Result-->
+            <p id="result">Total: 0.00 SR</p>
+        </div>
+        <script src="06-Javascript.js"></script>
+    </body>
+</html>

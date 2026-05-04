@@ -1,0 +1,72 @@
+/*sets themes, fonts, and space*/
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background:linear-gradient(135deg,#1e3c72,#0f1c2e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: white
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+/*enlarged and centers calculator container*/
+.calcu{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;
+}
+
+/*styed input with focus effect*/
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus{
+    border-color: #ff6b35;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255,107,53,0.2);
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*style button with color and size*/
+button{
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+/*adds hover effect*/
+button:hover{
+    box-shadow: 0 8px 25px rgba(255,107,53,0.3);
+}
+
+/*Englarged Result Display*/
+#result{
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
