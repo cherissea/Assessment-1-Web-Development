@@ -1,193 +1,352 @@
-/*set overall theme, font, text color, and spacing */
-body{
-    font-family:'Quicksand', sans-serif;
-    background-color:white;
-    color: black;
-    line-height: 1.6;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+/* BASE*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/*header theme color, font, and spacing*/
-header{
-    background-color:#645394;
-    font-family:'Yeseva One';
-    color: white;
-    padding: 18px 40px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f3eef9;
+  color: #2a1f3d;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-/*Focura Sizing and letter spacing*/
-header h1{
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
+a {
+  text-decoration: none;
+  color: #645394;
+  font-weight: 600;
+  transition: color 0.2s;
 }
 
-/*Tagline sizing and margin*/
-header p{
-    font-size: 0.82rem;
-    opacity: 0.8;
-    margin-top: 20px;
+a:hover {
+  color: #3b2460;
 }
 
-/*navigation pink background and margin from container*/
-nav{
-    background-color: #dab1da;
-    padding: 2px 40px;
+
+/*PAGE LAYOUT*/
+body {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
-/*makes list lay horizontally and no bullet points*/
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 4px;
-    justify-content: center;
+header {
+  grid-column: 1 / 3;
+  grid-row: 1;
 }
 
-/*styling hover transitions*/
+nav {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+
+/*HEADER */
+header {
+  background: #645394;
+  padding: 22px 20px 16px;
+  border-bottom: 1px solid #4a3578;
+}
+
+header h1 {
+  font-family: 'Yeseva One', serif;
+  font-size: 1.45rem;
+  color: white;
+  letter-spacing: 0.4px;
+}
+
+header p {
+  font-size: 0.7rem;
+  color: white;
+  opacity: 0.65;
+  margin-top: 3px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+
+/* NAVIGATION */
+nav {
+  background: white;
+  border-right: 1.5px solid #e8d8f0;
+  padding: 20px 0 16px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 nav ul li a {
-    display: flex;
-    color:#645394;
-    text-decoration: none;
-    padding: 12px 18px;
-    font-size: 0.9rem;
-    transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 0 10px 10px 0;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: #8b6aad;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: background 0.18s, color 0.18s;
 }
 
-/*adds hover effect to navigations*/
-nav ul li a:hover{
-    background-color: #645394;
-    color: white;
-    font-weight: 600;
+nav ul li a:hover {
+  background: #f3eef9;
+  color: #645394;
 }
 
-/*current page tab styling*/
-nav ul li a.active{
-    background-color: #645394;
-    color: white;
-    font-weight: 600;
+/* Active nav (the current page tab) */
+nav ul li a.active {
+  background: #645394;
+  color: white;
 }
 
-/*spacing with main content*/
-main{
-    max-width: 1100px;
-    margin:0 auto;
-    padding: 30px 20px 40px;
+
+/* MAIN CONTENT AREA */
+main {
+  padding: 24px 22px 20px;
+  background: #f3eef9;
+  overflow-y: auto;
 }
 
-/*Styled heading*/
-.greet h2{
-    font-family: 'Yeseva One';
-    color: #645394;
-    margin-bottom: 6px;
+
+/* GREETING BANNER */
+.greet {
+  margin-bottom: 20px;
 }
 
-/*text after heading*/
-.greet p{
-    font-size: 15px;
+.greet h2 {
+  font-family: 'Yeseva One', serif;
+  font-size: 1.55rem;
+  color: #3b2460;
+  margin-bottom: 2px;
 }
 
-/*three column grid layout*/
-.aside{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 24px;
-    align-items: start;
+.greet p {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: #8b6aad;
 }
 
-/*panel card styled with background color, shadow, and rounded corners*/
-.panel{
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px black;
-    overflow: hidden;
+
+/*3 COLUMN GRID */
+.aside {
+  display: grid;
+  grid-template-columns: 175px 1fr 165px;
+  gap: 14px;
+  align-items: start;
 }
 
-/*style bg color of paneh header*/
-.panel header{
-    background-color: #645394;
-    padding: 14px 18px;
+
+/* PANELS OF 3 COLUMNS*/
+.panel {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e8d8f0;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
 }
 
-/*pink border on panel content*/
-.panel div{
-    border: 1px solid #dab1da;
-    border-radius: 8px;
-    padding: 16px 18px ;
-    font-size: 0.9rem;
+.panel div {
+  padding: 10px;
 }
 
-/*Text labels displayed as block*/
-.panel div strong{
-    display: block;
-    color: #645394;
-    margin-bottom: 2px;
+.panel:hover {
+  box-shadow: 0 4px 18px rgba(100,83,148,0.14);
 }
 
-/*size adjusment*/
-.panel div span{
-    font-size: 12px;
+/* Purple header every panel */
+.panel header {
+  background: #645394;
+  padding: 12px 16px;
+  border: none;
 }
 
-/* task panel with green left accent border*/
-#task{
-    border-left: 4px solid lightgreen;
-    border-radius: 0 8px 8px 0;
-    padding: 12px 14px;
-    margin-bottom: 14px;
+.panel header h2 {
+  font-family: 'Yeseva One', serif;
+  font-size: 0.85rem;
+  color: white;
+  letter-spacing: 0.2px;
 }
 
-#task h3{
-    font-size: larger;
-    margin-bottom: 4px;
+
+/*COURSE TOPICS */
+.topic-row {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f0e8f8;
+  font-size: 0.78rem;
 }
 
-/*status badge styled in line block and rounded corner*/
-.status{
-    display: inline-block;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin: 6px
+.topic-row:last-child {
+  border-bottom: none;
 }
 
-/*different color for eac status*/
-.status.done{background: lightgreen;}
-.status.ongoing{ background-color: yellow;}
-.status.todo{background-color: lightsalmon;}
-
-/*styles the add task button*/
-button{ 
-    display: inline-block;
-    background-color: #645394;
-    padding: 8px 18px;
-    font-weight: 600;
-    color: white;
-    border: 2px solid;
-    border-radius: 8px;
+.topic-row strong {
+  display: block;
+  font-size: 0.78rem;
+  color: #3b2460;
+  font-weight: 700;
+  margin-bottom: 1px;
 }
 
-/*last section styling text large*/
-.last p{
-    font: size 2rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 10PX 0 4px;
+.topic-row span {
+  font-size: 0.68rem;
+  color: #8b6aad;
 }
 
-/*progress value bold*/
-.value{
-    font-weight: 700;
+.topic-row a {
+  font-size: 0.72rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
-/*purple footer with centered text*/
-footer{
-    background-color: #645394;
-    color: white;
-    text-align: center;
-    padding:  20px 40px;
-    font-size: larger;
+.topic-row a::after {
+  content: ' →';
+}
+
+
+/* STUDY SCHEDULE*/
+#task {
+  padding: 11px 14px;
+  border-bottom: 1px solid #f0e8f8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#task:last-of-type {
+  border-bottom: none;
+}
+
+#task h3 {
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: #3b2460;
+  font-weight: 600;
+}
+
+#task p {
+  font-size: 0.65rem;
+  color: #8b6aad;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+
+/*STATUS BARS*/
+.status {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.status.done    { background: #d4f5e9; color: #1a6645; }
+.status.ongoing { background: #fef3cd; color: #7a5200; }
+.status.todo    { background: #fde8e1; color: #8c2d1a; }
+
+
+/* ADD TASK BUTTON */
+button {
+  display: block;
+  width: calc(100% - 28px);
+  margin: 12px 14px;
+  padding: 9px 0;
+  background: #645394;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3b2460;
+}
+
+
+/* PROGRESS PANEL*/
+.last .panel {
+  background: #645394;
+  border-color: #4a3578;
+}
+
+.last .panel header {
+  background: #4a3578;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.last .panel p{
+  text-align: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.last .panel #label{
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.last .panel header h2 {
+  color: white;
+}
+
+/*tasks done, hours, deadline*/
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: 0.72rem;
+}
+
+.progress span {
+  color: rgba(255,255,255,0.70);
+}
+
+.value {
+  font-weight: 700;
+  color: white;
+  font-family: 'Lora', serif;
+}
+
+
+/*FOOTER*/
+footer {
+  background: #3b2460;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
 }
